@@ -16,9 +16,14 @@ void draw()
 {
  sprite.fillSprite(TFT_BLACK);
  sprite.drawString("Hello World",20,20,4);
+ sprite.drawString("Hello World",20,40,4);
+ sprite.drawString("Hello World",20,60,4);
+ sprite.drawString("Hello World",20,80,4);
+
+
  sprite.fillRect(10,100,60,60,TFT_RED);
- sprite.fillRect(80,100,60,60,TFT_GREEN);
- sprite.fillRect(150,100,60,60,TFT_BLUE);
+ sprite.fillRect(100,100,60,60,TFT_GREEN);
+ sprite.fillRect(200,100,60,60,TFT_BLUE);
  
  lcd_PushColors(0, 0, 536, 240, (uint16_t*)sprite.getPointer());
 }
